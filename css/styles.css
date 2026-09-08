@@ -1,4 +1,4 @@
-:root{--ink:#11120f;--soft:#f1efe8;--white:#fff;--lime:#2356e8;--muted:#a7a89f;--line:rgba(17,18,15,.15);--display:'Oswald',sans-serif;--body:'DM Sans',sans-serif}
+:root{--ink:#11120f;--soft:#f6f7f8;--white:#fff;--lime:#2356e8;--muted:#8e949b;--line:rgba(17,18,15,.15);--display:'Oswald',sans-serif;--body:'DM Sans',sans-serif}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--soft);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6}
@@ -72,7 +72,7 @@ em{font-style:normal;color:var(--lime)}
 .niles:after,.elmwood:after,.elk:after{content:"";position:absolute;width:230px;height:230px;border:1px solid rgba(201,255,54,.25);border-radius:50%;top:25%;right:-80px}
 .elmwood:after{border-radius:0;transform:rotate(35deg);right:-120px}
 .elk:after{width:170px;height:300px;border-radius:0;transform:skew(-20deg)}
-.stories{background:#dce2d3}
+.stories{background:#edf1f3}
 .testimonial-shell{max-width:1000px;margin:auto;position:relative;padding:0 6rem;text-align:center}
 .quote-mark{font:700 8rem/1 Georgia;color:var(--lime);text-shadow:1px 1px 0 var(--ink),-1px -1px 0 var(--ink)}
 .testimonial-stage blockquote{font:500 clamp(1.8rem,3.3vw,3.2rem)/1.25 var(--display);margin:0}
@@ -106,7 +106,7 @@ footer>p{font-size:.8rem;color:#898b84}
 .location-card.niles{background-image:url('../assets/locations/current-site/gym-01.jpeg')}
 .location-card.elmwood{background-image:url('../assets/locations/current-site/gym-02.jpeg')}
 .coming-soon-label{display:block!important;margin-top:1.5rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,.25);color:white!important;text-transform:uppercase;letter-spacing:.1em}
-.join{background:#e7e5dd}
+.join{background:#f3f5f6}
 .join-heading{display:grid;grid-template-columns:1fr 1fr;gap:6vw;align-items:end;margin-bottom:3rem}
 .join h2{font-size:clamp(3.2rem,6.4vw,6.2rem);letter-spacing:-.035em}
 .join-heading p{max-width:520px;color:#60625b}
