@@ -1,5 +1,6 @@
 window.THINKFIT_TESTIMONIALS=[
-  {quote:"ThinkFit feels like the gym was built around real people. The team knows me, the space is always clean, and I actually look forward to training.",name:"Marissa K.",club:"Niles member · 3 years"},
-  {quote:"I came in wanting more energy and a routine I could stick to. Six months later, I’m stronger than I’ve ever been—and I’ve found my people.",name:"David R.",club:"Elmwood Park member · 2 years"},
-  {quote:"There’s no posturing here. Great equipment, thoughtful coaching, and members who genuinely encourage each other. It makes consistency easy.",name:"Priya S.",club:"Elk Grove Village member · 1 year"}
+  {quote:"This isn’t just weight loss—this is a life transformation. Better eating, smarter training, and a stronger mindset helped Tyler build discipline instead of looking for shortcuts.",name:"Tyler",club:"Lost more than 95 pounds"},
+  {quote:"A full-time litigation attorney and father of three, Ahmed kept showing up. His transformation proves that even when life is busy, consistency and discipline can create lasting change.",name:"Ahmed",club:"Lost 45 pounds"},
+  {quote:"From size 20 to size 14 and stronger than ever. Yami’s commitment to the ThinkFit meal plan and workout program built confidence, strength, and an unstoppable mindset.",name:"Yami",club:"Nearly 100 pounds lost"},
+  {quote:"Not every transformation is about losing weight. Samir focused on gaining muscle, improving body composition, and learning which foods support sustainable long-term change.",name:"Samir",club:"Muscle, nutrition, and long-term change"}
 ];
