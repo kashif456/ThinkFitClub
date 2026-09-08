@@ -42,6 +42,23 @@ img{max-width:100%;display:block}
 .result-card{background:#fff;padding:2rem}
 .result-card h2{font-size:2.4rem}
 .result-number{font:700 4rem/1 var(--display);color:var(--blue)}
+.contact-hero{padding:7rem 6vw 5rem;background:var(--ink);color:#fff}
+.contact-hero>div{max-width:850px}
+.contact-hero h1{font:700 clamp(4rem,8vw,7.5rem)/.9 var(--display);letter-spacing:-.035em;margin:.8rem 0 1.5rem}
+.contact-hero>div>p:last-child{max-width:610px;color:#d2d5db;font-size:1.1rem}
+.contact-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:8vw;align-items:start}
+.contact-copy h2{font-size:clamp(2.8rem,5vw,5rem)}
+.direct-contact{display:grid;margin-top:2.5rem;border-top:1px solid #c7cbd0}
+.direct-contact a{padding:1rem 0;border-bottom:1px solid #c7cbd0;font-weight:700}
+.direct-contact span{display:block;color:#626a73;font-size:.64rem;letter-spacing:.12em;text-transform:uppercase}
+.consultation-form{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;background:#fff;padding:2.25rem;border-top:5px solid var(--blue);box-shadow:0 18px 55px rgba(0,0,0,.08)}
+.consultation-form label{font-size:.68rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.consultation-form input,.consultation-form select,.consultation-form textarea{display:block;width:100%;margin-top:.45rem;padding:.85rem;border:1px solid #cbd0d5;background:#fff;font:inherit;text-transform:none;letter-spacing:0}
+.consultation-form textarea{resize:vertical}
+.full-field{grid-column:1/-1}
+.consultation-form button{border:0;font-weight:800;text-transform:uppercase;letter-spacing:.07em;cursor:pointer}
+.form-note{margin:0;color:#626a73;font-size:.75rem}
+.page-footer-links{display:flex;gap:1.5rem}
 
 @media(max-width:760px){.page-nav a:not(.nav-cta){display:none}
 .subhero{min-height:570px;padding:6rem 6vw 3.5rem}
@@ -50,6 +67,9 @@ img{max-width:100%;display:block}
 .content{padding:4.5rem 6vw}
 .hero-actions{align-items:stretch;flex-direction:column}
 .hero-actions a{text-align:center}
+.contact-layout,.consultation-form{grid-template-columns:1fr}
+.consultation-form{padding:1.4rem}
+.full-field{grid-column:auto}
 .page-footer{flex-direction:column}
 .embed{margin-left:-6vw;margin-right:-6vw}
 .embed iframe{height:720px}

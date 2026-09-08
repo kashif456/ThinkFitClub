@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fitness Consultation | ThinkFit Club</title>
+<meta name="description" content="Request a personal training or membership consultation with ThinkFit Club in Niles or Elmwood Park, Illinois.">
+<link rel="canonical" href="https://www.thinkfitclub.com/contact/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Schedule a Consultation | ThinkFit Club">
+<meta property="og:description" content="Tell us your goals and connect with the ThinkFit Club team.">
+<meta property="og:url" content="https://www.thinkfitclub.com/contact/">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Oswald:wght@600;700&display=swap">
+<link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
+<header class="page-header">
+<a class="wordmark logo-link" href="../"><img src="../assets/logos/thinkfit-logo-reversed-v1.png" alt="ThinkFit Club" width="1752" height="887"></a>
+<nav class="page-nav">
+<a href="../locations/niles/">Locations</a><a href="../results/">Stories</a><a href="../membership/">Membership</a><a class="nav-cta" href="#consultation">Consultation</a>
+</nav>
+</header>
+<main>
+<section class="contact-hero"><div><p class="kicker">Let’s talk about your goals</p><h1>YOUR NEXT MOVE<br>STARTS HERE.</h1><p>Tell us what you’re working toward. We’ll help you find the right location, training option, and next step.</p></div></section>
+<section class="content contact-layout" id="consultation">
+<div class="contact-copy"><p class="kicker">Consultation request</p><h2>LET’S BUILD<br>YOUR PLAN.</h2><p>Complete the form and your email app will open with your request ready to send to the ThinkFit team.</p><div class="direct-contact"><a href="tel:+17738073505"><span>Call</span>(773) 807-3505</a><a href="mailto:Teamzeefitness1@gmail.com"><span>Email</span>Teamzeefitness1@gmail.com</a><a href="https://www.instagram.com/teamzeefitness/" target="_blank" rel="noopener"><span>Instagram</span>@teamzeefitness ↗</a></div></div>
+<form class="consultation-form" id="consultation-form">
+<label>Full name<input type="text" name="name" autocomplete="name" required></label><label>Email<input type="email" name="email" autocomplete="email" required></label><label>Phone<input type="tel" name="phone" autocomplete="tel"></label><label>Preferred location<select name="location" required><option value="">Choose a club</option><option>Niles</option><option>Elmwood Park</option><option>ThinkFit Northwest — coming soon</option></select></label><label>What are you interested in?<select name="interest" required><option value="">Choose one</option><option>Personal training</option><option>Membership</option><option>Nutrition coaching</option><option>General consultation</option></select></label><label class="full-field">Tell us about your goals<textarea name="goals" rows="5" required></textarea></label><button class="primary-cta full-field" type="submit">Send consultation request →</button><p class="form-note full-field">Submitting opens your email app so you can review the message before sending.</p>
+</form>
+</section>
+</main>
+<footer class="page-footer"><strong>THINKFIT CLUB</strong><p>Think different. Train different.</p><div class="page-footer-links"><a href="https://www.instagram.com/teamzeefitness/" target="_blank" rel="noopener">Instagram ↗</a><a href="../">Back to home</a></div></footer>
+<script>
+document.querySelector('#consultation-form').addEventListener('submit',function(event){event.preventDefault();const data=new FormData(this);const subject='ThinkFit consultation request — '+data.get('name');const body=['Name: '+data.get('name'),'Email: '+data.get('email'),'Phone: '+(data.get('phone')||'Not provided'),'Preferred location: '+data.get('location'),'Interest: '+data.get('interest'),'','Goals:',''+data.get('goals')].join('\n');window.location.href='mailto:Teamzeefitness1@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body)});
+</script>
+</body>
+</html>
