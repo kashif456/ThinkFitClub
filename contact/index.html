@@ -31,7 +31,7 @@
 </form>
 </section>
 </main>
-<footer class="page-footer"><strong>THINKFIT CLUB</strong><p>Think different. Train different.</p><div class="page-footer-links"><a href="https://www.instagram.com/teamzeefitness/" target="_blank" rel="noopener">Instagram ↗</a><a href="../">Back to home</a></div></footer>
+<footer class="page-footer"><strong>THINKFIT CLUB</strong><p>Think different. Train different.</p><div class="page-footer-links"><a href="../directions/">Directions</a><a href="https://www.instagram.com/teamzeefitness/" target="_blank" rel="noopener">Instagram ↗</a><a href="../">Home</a></div></footer>
 <script>
 document.querySelector('#consultation-form').addEventListener('submit',function(event){event.preventDefault();const data=new FormData(this);const subject='ThinkFit consultation request — '+data.get('name');const body=['Name: '+data.get('name'),'Email: '+data.get('email'),'Phone: '+(data.get('phone')||'Not provided'),'Preferred location: '+data.get('location'),'Interest: '+data.get('interest'),'','Goals:',''+data.get('goals')].join('\n');window.location.href='mailto:Teamzeefitness1@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body)});
 </script>
