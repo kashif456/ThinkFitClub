@@ -41,3 +41,24 @@ document.querySelectorAll('.club-tab[data-src]').forEach(tab=>tab.addEventListen
 }));
 const year=document.querySelector('#year');
 if(year)year.textContent=new Date().getFullYear();
+
+const heroImage=document.querySelector('.home-v2 .hero-image');
+const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
+let parallaxFrame;
+function updateHeroParallax(){
+  parallaxFrame=undefined;
+  if(!heroImage||reduceMotion.matches||window.innerWidth<=900){
+    if(heroImage)heroImage.style.transform='';
+    return;
+  }
+  const offset=Math.min(window.scrollY*.11,42);
+  heroImage.style.transform=`translate3d(0,${offset}px,0)`;
+}
+if(heroImage){
+  window.addEventListener('scroll',()=>{
+    if(!parallaxFrame)parallaxFrame=requestAnimationFrame(updateHeroParallax);
+  },{passive:true});
+  window.addEventListener('resize',updateHeroParallax,{passive:true});
+  reduceMotion.addEventListener?.('change',updateHeroParallax);
+  updateHeroParallax();
+}
