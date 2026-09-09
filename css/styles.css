@@ -119,3 +119,57 @@ footer>p{font-size:.8rem;color:#898b84}
 .mobile-action-bar{display:none}
 @media(max-width:900px){.join-heading{grid-template-columns:1fr;gap:2rem}.embed-shell{min-height:720px}.membership-frame{height:720px}}
 @media(max-width:560px){body{padding-bottom:72px}.join h2{font-size:14vw}.club-tabs{display:grid}.club-tab{text-align:center}.embed-shell{margin-left:-6vw;margin-right:-6vw;min-height:680px}.membership-frame{height:680px}.mobile-action-bar{position:fixed;z-index:100;left:0;right:0;bottom:0;height:72px;display:grid;grid-template-columns:repeat(3,1fr);background:#fff;color:var(--ink);border-top:1px solid rgba(17,18,15,.16);box-shadow:0 -10px 28px rgba(0,0,0,.14);padding-bottom:env(safe-area-inset-bottom)}.mobile-action-bar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.2rem;border-right:1px solid rgba(17,18,15,.12);font-size:.6rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.mobile-action-bar a:last-child{border-right:0}.mobile-action-bar svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.mobile-action-bar .mobile-action-primary{background:var(--lime);color:#fff}}
+
+/* Homepage v2: tighter editorial rhythm, image-first proof */
+.home-v2 .site-header{position:absolute;height:76px}
+.home-v2 .brand-logo img{height:56px}
+.home-v2 .desktop-nav{gap:1.7rem;font-size:.78rem}
+.home-v2 .hero{height:610px;min-height:610px;max-height:610px}
+.home-v2 .hero-content{margin-top:50px;max-width:760px}
+.home-v2 .hero-content h1{font-size:clamp(4.4rem,7.4vw,7rem)}
+.home-v2 .hero-overlay{background:linear-gradient(90deg,rgba(5,7,10,.96),rgba(5,7,10,.58) 55%,rgba(5,7,10,.12)),linear-gradient(0deg,rgba(5,7,10,.55),transparent 55%)}
+.home-v2 .hero-stat strong{font-size:2.8rem}
+.home-v2 .section-pad{padding:4.5rem 6vw}
+.home-v2 .section-label{margin-bottom:1.5rem;font-size:.75rem}
+.value-heading,.story-heading{display:flex;align-items:end;justify-content:space-between;gap:4rem;margin-bottom:2.25rem}
+.value-heading h2,.club-film h2,.story-heading h2{font-size:clamp(3.3rem,5.8vw,5.8rem);letter-spacing:-.035em}
+.value-heading>p{max-width:470px;margin:0;color:#4f555d;font-size:1.05rem}
+.value-visual{display:grid;grid-template-columns:1.5fr .65fr;min-height:390px;background:#0b0d11;color:#fff;overflow:hidden}
+.value-visual>img{width:100%;height:100%;max-height:430px;object-fit:cover}
+.value-points{display:grid}
+.value-points article{display:flex;flex-direction:column;justify-content:center;padding:1.5rem 2rem;border-bottom:1px solid #2b2f37}
+.value-points article:last-child{border:0}
+.value-points strong{font:700 2.7rem/1 var(--display);color:var(--lime)}
+.value-points span{margin-top:.5rem;color:#c4c8cf;font-size:.85rem}
+.benefit-row{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid #d4d8dc;border-top:0;background:#fff}
+.benefit-row span{padding:1.1rem 1.25rem;border-right:1px solid #d4d8dc;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+.benefit-row span:last-child{border:0}
+.home-v2 .section-heading{margin-bottom:2.25rem}
+.home-v2 .location-card{height:390px;padding:1.6rem;background-position:center}
+.home-v2 .location-card:before{background:linear-gradient(0deg,rgba(0,0,0,.92) 0%,rgba(0,0,0,.18) 72%)}
+.home-v2 .location-card:hover:before{opacity:.9}
+.home-v2 .location-card h3{font-size:clamp(2.4rem,3.2vw,3.5rem)}
+.home-v2 .location-card div{width:100%}
+.home-v2 .location-card div>b{margin-top:1rem;border-top:1px solid rgba(255,255,255,.32);padding-top:.9rem;display:flex;justify-content:space-between;text-transform:uppercase;font-size:.7rem;letter-spacing:.09em}
+.home-v2 .location-card div>b i{font-style:normal}
+.home-v2 .location-card.northwest{background-image:url('../assets/locations/current-site/gym-04.jpeg');background-position:65% center}
+.club-film{display:grid;grid-template-columns:.62fr 1.38fr;gap:5vw;align-items:center;background:#fff}
+.film-copy p{max-width:430px;color:#565d66}
+.video-shell{position:relative;aspect-ratio:16/9;background:#080a0d;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.13)}
+.video-shell iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.home-v2 .stories{background:#0c0f14;color:#fff}
+.story-heading{margin-bottom:2rem}
+.story-heading .text-link{flex:0 0 auto}
+.story-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.story-card{background:#171b22;border:1px solid #2b3039;overflow:hidden}
+.story-card>div:last-child{padding:1.25rem}
+.story-photo{aspect-ratio:1/1;background:#20252d;display:grid;place-items:center;position:relative;overflow:hidden}
+.story-photo:after{content:"PHOTO PENDING";position:absolute;left:1rem;bottom:1rem;color:#9299a5;font-size:.65rem;letter-spacing:.13em}
+.story-photo span{font:700 clamp(2.5rem,4vw,4.3rem)/1 var(--display);color:#303641;transform:rotate(-8deg)}
+.story-card strong{color:#7295ff;font-size:.72rem;letter-spacing:.1em}
+.story-card h3{font-size:2rem;margin:.4rem 0 .65rem}
+.story-card p{color:#b9bec7;font-size:.84rem;line-height:1.5;margin:0}
+.asset-note{margin:1.2rem 0 0;color:#7f8793;font-size:.72rem}
+.home-v2 .membership{gap:6vw}
+.home-v2 .join-heading{margin-bottom:2rem}
+.home-v2 footer{padding-top:3rem}
