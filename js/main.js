@@ -42,6 +42,13 @@ document.querySelectorAll('.club-tab[data-src]').forEach(tab=>tab.addEventListen
 const year=document.querySelector('#year');
 if(year)year.textContent=new Date().getFullYear();
 
+const siteHeader=document.querySelector('.home-v2 .site-header');
+function updateStickyHeader(){siteHeader?.classList.toggle('is-scrolled',window.scrollY>24)}
+if(siteHeader){
+  window.addEventListener('scroll',updateStickyHeader,{passive:true});
+  updateStickyHeader();
+}
+
 const heroImage=document.querySelector('.home-v2 .hero-image');
 const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
 let parallaxFrame;
