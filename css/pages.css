@@ -137,6 +137,7 @@ img{max-width:100%;display:block}
 .training-page .training-results{padding-top:4.5rem;padding-bottom:4.5rem}
 .training-results-intro{display:grid;grid-template-columns:.8fr 1.2fr;gap:6vw;align-items:start;max-width:1500px;margin:0 auto 2.75rem;border-bottom:1px solid #303641;padding-bottom:2.75rem}
 .training-results-intro .section-intro,.training-results-intro .results-heading{max-width:none;margin:0;padding:0;border:0}
+.training-results-intro .kicker{font-size:.76rem;color:#d5ddff;letter-spacing:.19em}
 .training-results-intro .section-intro h2{font-size:clamp(3.4rem,5.5vw,5.8rem)}
 .training-results-intro .results-heading h2{font-size:clamp(2.7rem,4.5vw,4.7rem)}
 .training-page .result-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem;max-width:1500px;margin:0 auto}
