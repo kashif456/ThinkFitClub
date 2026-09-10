@@ -111,6 +111,53 @@ img{max-width:100%;display:block}
 .location-page #join{padding-top:2.8rem}
 .location-page #join>h2{margin-top:.4rem}
 
+/* Training & results: compact editorial program and proof system */
+.training-page .training-programs{padding-top:4.5rem;padding-bottom:4.5rem}
+.programs-heading{display:grid;grid-template-columns:1.25fr .75fr;gap:6vw;align-items:end;max-width:1500px;margin:0 auto 2.5rem}
+.programs-heading>p{max-width:520px;margin:0 0 .5rem;color:#505761;font-size:1.05rem}
+.program-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;max-width:1500px;margin:0 auto}
+.program-card{min-height:270px;padding:1.75rem;background:#fff;border-top:5px solid var(--blue);display:flex;flex-direction:column;box-shadow:0 12px 35px rgba(9,11,15,.05)}
+.program-card>span{color:var(--blue);font-size:.7rem;font-weight:800;letter-spacing:.12em}
+.program-card h3{font:700 clamp(1.65rem,2vw,2.25rem)/1 var(--display);text-transform:uppercase;margin:auto 0 .8rem}
+.program-card p{color:#565d66;margin:0;font-size:.92rem}
+.training-page .training-results{padding-top:4.5rem;padding-bottom:4.5rem}
+.training-results-intro{display:grid;grid-template-columns:.8fr 1.2fr;gap:6vw;align-items:end;max-width:1500px;margin:0 auto 2.75rem;border-bottom:1px solid #303641;padding-bottom:2.75rem}
+.training-results-intro .section-intro,.training-results-intro .results-heading{max-width:none;margin:0;padding:0;border:0}
+.training-results-intro .section-intro h2{font-size:clamp(3.4rem,5.5vw,5.8rem)}
+.training-results-intro .results-heading h2{font-size:clamp(2.7rem,4.5vw,4.7rem)}
+.training-page .result-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem;max-width:1500px;margin:0 auto}
+.training-page .result-story,.training-page .result-story:nth-child(even){grid-template-columns:minmax(240px,.9fr) 1.1fr;background:#181c23;border:1px solid #2b313b;color:#fff}
+.training-page .result-story:nth-child(even) img{order:0}
+.training-page .result-story img{min-height:400px;max-height:500px}
+.training-page .result-story>div{padding:2rem}
+.training-page .result-story h2{font-size:clamp(2.8rem,4vw,4.2rem);margin:.45rem 0 1rem}
+.training-page .result-story p{color:#bdc3cc;font-size:.92rem}
+.training-cta{max-width:1500px;margin:3rem auto 0;padding:2.5rem 0 0;border-top:1px solid #303641;display:flex;align-items:end;justify-content:space-between;gap:2rem}
+.training-cta h2{font-size:clamp(3rem,5vw,5rem);margin:.5rem 0 0}
+
+/* About */
+.about-hero{min-height:580px;background:#090b0f;color:#fff;display:grid;grid-template-columns:1.1fr .9fr;align-items:stretch;overflow:hidden}
+.about-hero-copy{padding:5rem 6vw;align-self:center}
+.about-hero h1{font:700 clamp(4.5rem,8vw,7.6rem)/.9 var(--display);letter-spacing:-.04em;margin:.75rem 0 1.25rem}
+.about-hero-copy>p:last-child{max-width:650px;color:#c5cad2;font-size:1.08rem}
+.about-hero-image{position:relative;min-height:500px}
+.about-hero-image:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#090b0f 0%,transparent 28%)}
+.about-hero-image img{width:100%;height:100%;object-fit:cover;object-position:center}
+.about-story{display:grid;grid-template-columns:.8fr 1.2fr;gap:8vw;align-items:start}
+.about-story-heading{position:sticky;top:120px}
+.about-story-copy{font-size:1.08rem;color:#484f58}
+.about-story-copy p:first-child{margin-top:0}
+.about-philosophy{background:#10131a;color:#fff;display:grid;grid-template-columns:.65fr 1.35fr;gap:7vw;align-items:start}
+.about-philosophy h2{margin-top:.7rem}
+.philosophy-points{display:grid}
+.philosophy-points article{padding:1.5rem 0;border-top:1px solid #313743;display:grid;grid-template-columns:48px .55fr 1fr;gap:1.25rem;align-items:start}
+.philosophy-points span{color:#86a4ff;font-size:.72rem;font-weight:800;letter-spacing:.1em}
+.philosophy-points h3{font:700 1.6rem/1 var(--display);text-transform:uppercase;margin:0}
+.philosophy-points p{color:#b9c0ca;margin:0}
+.about-cta{padding:4.5rem 6vw;background:var(--blue);color:#fff;display:flex;justify-content:space-between;align-items:end;gap:3rem}
+.about-cta h2{font:700 clamp(3.5rem,6vw,6rem)/.9 var(--display);letter-spacing:-.035em;margin:.6rem 0 0}
+.about-cta .primary-cta{background:#fff;color:var(--ink)}
+
 @media(max-width:760px){body{padding-bottom:72px}.page-header{height:auto;min-height:76px;padding-top:.35rem;padding-bottom:.55rem;flex-wrap:wrap;gap:.2rem}.wordmark.logo-link img{height:52px}.page-nav{width:100%;gap:1.1rem;overflow-x:auto;white-space:nowrap;padding:.35rem 0 .15rem;scrollbar-width:none}.page-nav::-webkit-scrollbar{display:none}.page-nav a{font-size:.68rem}.page-nav .nav-cta{padding:.55rem .75rem}
 .subhero{min-height:570px;padding:6rem 6vw 3.5rem}
 .subhero h1{font-size:16vw}
@@ -137,6 +184,8 @@ img{max-width:100%;display:block}
 .result-story,.result-story:nth-child(even),.training-proof-grid,.training-proof-grid article{grid-template-columns:1fr}.result-story:nth-child(even) img{order:0}.result-story img{min-height:0;height:auto}.result-story>div{padding:1.5rem}.training-proof-grid img{min-height:0;height:auto}
 .locations-page .locations-hero{grid-template-columns:1fr;padding:2.5rem 6vw 2rem}.locations-page .locations-hero h1{font-size:15vw}.locations-page .location-picker{padding:1rem 6vw 3rem}.locations-page .location-image-link img{height:230px}.locations-page .location-membership{padding-top:3rem}
 .location-page .subhero{height:auto;min-height:510px;padding:3.5rem 6vw 2.75rem}.location-page .subhero h1{font-size:14vw}.location-page .subhero p{font-size:1rem}.location-page .hero-actions{margin-top:1.25rem}.club-switcher{grid-template-columns:1fr;padding:0}.club-switcher a,.club-switcher a:first-child{border-left:0;border-right:0;border-bottom:1px solid #2c323d;padding:.8rem 6vw}.location-page .content{padding:3rem 6vw}.location-page #join{padding-top:2.5rem}
+.training-page .training-programs,.training-page .training-results{padding-top:3.25rem;padding-bottom:3.25rem}.programs-heading,.training-results-intro{grid-template-columns:1fr;gap:1.25rem}.program-grid{grid-template-columns:1fr}.program-card{min-height:220px}.training-page .result-list{grid-template-columns:1fr}.training-page .result-story,.training-page .result-story:nth-child(even){grid-template-columns:1fr}.training-page .result-story img{min-height:0;max-height:none;aspect-ratio:1/1;object-fit:cover}.training-cta{align-items:flex-start;flex-direction:column}.training-cta .primary-cta{width:100%;text-align:center}
+.about-hero{grid-template-columns:1fr;min-height:0}.about-hero-copy{padding:3.5rem 6vw 2.5rem}.about-hero-image{min-height:360px}.about-hero-image:after{background:linear-gradient(0deg,transparent 70%,#090b0f)}.about-story,.about-philosophy{grid-template-columns:1fr;gap:2rem}.about-story-heading{position:static}.philosophy-points article{grid-template-columns:38px 1fr}.philosophy-points p{grid-column:2}.about-cta{align-items:flex-start;flex-direction:column}.about-cta .primary-cta{width:100%;text-align:center}
 }
 
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}
