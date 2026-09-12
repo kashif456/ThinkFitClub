@@ -6,7 +6,10 @@
   .locations-page .location-membership-embed.membership-scroll-container{margin-left:24px;margin-right:24px}
   .membership-scroll-container iframe{display:block;width:100%;max-width:100%}
   /* A general scroll hint, not a provider scroll-position indicator. */
-  .membership-scroll-cue{display:flex;position:absolute;right:5px;top:45%;z-index:2;align-items:center;justify-content:center;width:28px;height:42px;color:#2356e8;pointer-events:none;font:700 26px/1 sans-serif}
+  .membership-scroll-cue{display:flex;position:absolute;right:5px;top:45%;z-index:2;flex-direction:column;gap:10px;align-items:center;justify-content:center;width:28px;height:42px;color:#2356e8;pointer-events:none}
+  .membership-scroll-cue span{display:block;width:10px;height:10px;border-left:3px solid currentColor;border-top:3px solid currentColor;border-radius:1px}
+  .membership-chevron-up{transform:rotate(45deg)}
+  .membership-chevron-down{transform:rotate(225deg)}
 }
 @keyframes membership-arrow-nudge{0%,100%{transform:translateY(0)}50%{transform:translateY(4px)}}
 @media(prefers-reduced-motion:reduce){.membership-scroll-cue{animation:none}}

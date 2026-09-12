@@ -30,7 +30,8 @@ if(membershipFrames.length){
     const cue=document.createElement('span');
     cue.className='membership-scroll-cue';
     cue.setAttribute('aria-hidden','true');
-    cue.textContent='↕';
+    cue.appendChild(document.createElement('span')).className='membership-chevron-up';
+    cue.appendChild(document.createElement('span')).className='membership-chevron-down';
     container.appendChild(cue);
     scrollCues.push({container,cue});
   });
