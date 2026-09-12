@@ -23,13 +23,43 @@ if(membershipFrames.length){
   scrollStyles.rel='stylesheet';
   scrollStyles.href=new URL('../css/membership-scroll.css',document.currentScript.src).href;
   document.head.appendChild(scrollStyles);
+  const scrollCues=[];
   membershipFrames.forEach(frame=>{
     const container=frame.parentElement;
     container.classList.add('membership-scroll-container');
     const cue=document.createElement('span');
     cue.className='membership-scroll-cue';
     cue.setAttribute('aria-hidden','true');
-    cue.textContent='↓';
+    cue.textContent='↕';
     container.appendChild(cue);
+    scrollCues.push({container,cue});
   });
+  const positionScrollCues=()=>{
+    const mobile=window.matchMedia('(max-width:760px)').matches;
+    // Keep the cue within the visible embed, clear of the header and action bar.
+    const viewportBottom=window.innerHeight-90;
+    scrollCues.forEach(({container,cue})=>{
+      if(!mobile){cue.style.removeProperty('top');cue.style.removeProperty('visibility');return;}
+      const rect=container.getBoundingClientRect();
+      const visibleTop=Math.max(rect.top+12,90);
+      const visibleBottom=Math.min(rect.bottom-12,viewportBottom);
+      cue.style.visibility=visibleBottom-visibleTop>=42?'visible':'hidden';
+      const top=Math.max(12,Math.min(rect.height-54,(visibleTop+visibleBottom)/2-rect.top-21));
+      cue.style.top=top+'px';
+    });
+  };
+  let cueFramePending=false;
+  const scheduleCuePosition=()=>{
+    if(cueFramePending)return;
+    cueFramePending=true;
+    requestAnimationFrame(()=>{cueFramePending=false;positionScrollCues();});
+  };
+  window.addEventListener('scroll',scheduleCuePosition,{passive:true});
+  window.addEventListener('resize',scheduleCuePosition);
+  membershipFrames.forEach(frame=>frame.addEventListener('load',scheduleCuePosition));
+  if(window.ResizeObserver){
+    const cueResizeObserver=new ResizeObserver(scheduleCuePosition);
+    scrollCues.forEach(({container})=>cueResizeObserver.observe(container));
+  }
+  positionScrollCues();
 }
