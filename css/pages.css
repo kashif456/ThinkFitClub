@@ -207,6 +207,7 @@ img{max-width:100%;display:block}
 .contact-layout .kicker{font-size:.78rem;color:#315edc;letter-spacing:.18em}
 .contact-layout{padding:1.9rem 6vw 3.25rem;gap:2.25rem}
 .consultation-form{padding:1.4rem}
+.consultation-form.consultation-embed{padding:0;margin-left:-6vw;margin-right:-6vw;box-shadow:none}
 .full-field{grid-column:auto}
 .direction-grid{grid-template-columns:1fr}
 .upcoming-direction{grid-column:auto}
