@@ -34,7 +34,10 @@
       group.className='directions-social-actions';
       directions.replaceWith(group);
       group.appendChild(directions);
-      group.appendChild(createLink(clubAccount));
+      const instagram=createLink(clubAccount);
+      // Trim the SVG's empty margins so its visible outline matches the button height.
+      instagram.querySelector('svg').setAttribute('viewBox','2.1 2.1 19.8 19.8');
+      group.appendChild(instagram);
     }
   }
 })();
