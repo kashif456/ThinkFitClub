@@ -1,7 +1,7 @@
 .membership-scroll-cue{display:none}
 @media(max-width:760px){
   .membership-scroll-container{position:relative}
-  .membership-scroll-cue{display:flex;position:absolute;right:5px;bottom:22px;z-index:2;align-items:center;justify-content:center;width:24px;height:34px;background:#fff;color:#315edc;border-radius:12px;box-shadow:0 2px 8px #090b0f26;pointer-events:none;font:700 24px/1 sans-serif;animation:membership-arrow-nudge 1.4s ease-in-out 3}
+  .membership-scroll-cue{display:flex;position:absolute;right:5px;top:45%;z-index:2;align-items:center;justify-content:center;width:28px;height:42px;background:#2356e8;color:#fff;border-radius:16px;box-shadow:0 2px 8px #090b0f33;pointer-events:none;font:700 24px/1 sans-serif;animation:membership-arrow-nudge 1.4s ease-in-out 3}
 }
 @keyframes membership-arrow-nudge{0%,100%{transform:translateY(0)}50%{transform:translateY(4px)}}
 @media(prefers-reduced-motion:reduce){.membership-scroll-cue{animation:none}}
