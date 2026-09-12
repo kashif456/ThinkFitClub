@@ -15,3 +15,21 @@ mobileActions.innerHTML=`
     <span>Consult</span>
   </a>`;
 document.body.appendChild(mobileActions);
+
+// A visual cue only: preserve the provider's native scrolling and scrollbar.
+const membershipFrames=document.querySelectorAll('iframe[src*="go.streamfit.com/embed/memberships/"]');
+if(membershipFrames.length){
+  const scrollStyles=document.createElement('link');
+  scrollStyles.rel='stylesheet';
+  scrollStyles.href=new URL('../css/membership-scroll.css',document.currentScript.src).href;
+  document.head.appendChild(scrollStyles);
+  membershipFrames.forEach(frame=>{
+    const container=frame.parentElement;
+    container.classList.add('membership-scroll-container');
+    const cue=document.createElement('span');
+    cue.className='membership-scroll-cue';
+    cue.setAttribute('aria-hidden','true');
+    cue.textContent='↓';
+    container.appendChild(cue);
+  });
+}
