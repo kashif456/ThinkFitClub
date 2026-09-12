@@ -116,6 +116,7 @@ img{max-width:100%;display:block}
 .location-page .subhero h1{font-size:clamp(3.8rem,6.8vw,6.7rem);max-width:780px}
 .location-page .subhero-content>p:not(.kicker){margin:.75rem 0}
 .location-page .hero-actions{margin-top:1.4rem}
+.location-state-short{display:none}
 .location-niles .subhero img{object-position:center 58%}
 .location-elmwood .subhero img{object-position:center 56%}
 .location-northwest .subhero img{object-position:center 52%}
@@ -229,6 +230,12 @@ img{max-width:100%;display:block}
 .training-page .subhero{min-height:500px;padding:2.5rem 6vw;align-items:center}.training-page .training-programs{padding-top:2.25rem;padding-bottom:2.6rem}.training-page .training-results{padding-top:2.25rem;padding-bottom:2.6rem}.programs-heading,.training-results-intro{grid-template-columns:1fr;gap:1.1rem}.programs-heading{margin-bottom:1.6rem}.programs-heading .kicker{font-size:.76rem;color:#315edc;letter-spacing:.16em;line-height:1.5}.program-grid{grid-template-columns:1fr}.program-card{min-height:0;padding:1.35rem}.program-card h3{margin:.7rem 0 .65rem}.training-results-intro{margin-bottom:1.75rem;padding-bottom:1.75rem}.training-page .result-list{grid-template-columns:1fr}.training-page .result-story,.training-page .result-story:nth-child(even){grid-template-columns:1fr}.training-page .result-story img{min-height:0;max-height:none;aspect-ratio:1/1;object-fit:cover}.training-cta{margin-top:1.75rem;padding-top:1.75rem;align-items:flex-start;flex-direction:column;gap:1.25rem}.training-cta .kicker{font-size:.76rem;color:#d5ddff}.training-cta .primary-cta{width:100%;text-align:center}
 .about-hero{grid-template-columns:1fr;min-height:0}.about-hero-copy{padding:3.5rem 6vw 2.5rem}.about-hero-image{min-height:360px}.about-hero-image:after{background:linear-gradient(0deg,transparent 70%,#090b0f)}.about-story,.about-philosophy{grid-template-columns:1fr;gap:2rem}.about-story-heading{position:static;min-height:520px}.philosophy-points article{grid-template-columns:38px 1fr}.philosophy-points p{grid-column:2}.about-cta{align-items:flex-start;flex-direction:column}.about-cta .primary-cta{width:100%;text-align:center}
 .store-intro{grid-template-columns:1fr;padding:2.75rem 6vw 2.25rem}.store-embed{padding:1.5rem 0 3rem}.store-embed iframe{height:720px}.footer-logo img{height:62px}
+}
+
+@media(max-width:760px){
+.location-niles .subhero,.location-elmwood .subhero{min-height:478px;padding-top:2.5rem}
+.location-niles .location-state-full,.location-elmwood .location-state-full{display:none}
+.location-niles .location-state-short,.location-elmwood .location-state-short{display:inline}
 }
 
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}
