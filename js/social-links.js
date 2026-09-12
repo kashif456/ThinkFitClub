@@ -7,22 +7,25 @@
     link.href='https://www.instagram.com/'+account.handle+'/';
     link.target='_blank';link.rel='noopener noreferrer';
     link.setAttribute('aria-label',account.label+' Instagram (opens in new tab)');
-    link.innerHTML=icon+'<span>'+account.label+'</span><span aria-hidden="true">↗</span>';
+    link.innerHTML=icon;
     return link;
   };
-  const footer=document.querySelector('footer');
-  if(footer){
-    const group=document.createElement('nav');
-    group.className='instagram-links';group.setAttribute('aria-label','Follow our clubs on Instagram');
-    accounts.forEach(account=>group.appendChild(createLink(account)));
-    footer.appendChild(group);
-  }
   document.querySelectorAll('.location-overview-card').forEach((card,index)=>{
     const account=accounts[index];
-    if(account)card.querySelector('.location-actions')?.appendChild(createLink(account));
+    if(account){const link=createLink(account);link.classList.add('location-instagram');card.appendChild(link);}
+  });
+  document.querySelectorAll('.home-v2 .location-card.niles,.home-v2 .location-card.elmwood').forEach(card=>{
+    const account=card.classList.contains('niles')?accounts[0]:accounts[1];
+    const wrapper=document.createElement('div');
+    wrapper.className='home-location-social';
+    card.replaceWith(wrapper);
+    wrapper.appendChild(card);
+    const link=createLink(account);
+    link.classList.add('home-location-instagram');
+    wrapper.appendChild(link);
   });
   const directContact=document.querySelector('.direct-contact');
-  if(directContact)accounts.forEach(account=>directContact.appendChild(createLink(account)));
+  if(directContact)accounts.forEach(account=>{const link=createLink(account);const label=document.createElement('span');label.textContent=account.label;link.appendChild(label);directContact.appendChild(link);});
   const clubAccount=document.body.classList.contains('location-niles')?accounts[0]:window.location.pathname.includes('/elmwood-park/')?accounts[1]:null;
-  if(clubAccount)document.querySelector('.hero-actions')?.appendChild(createLink(clubAccount));
+  if(clubAccount){const hero=document.querySelector('.subhero');if(hero){const link=createLink(clubAccount);link.classList.add('location-instagram');hero.appendChild(link);}}
 })();
