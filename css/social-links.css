@@ -5,7 +5,8 @@
 .home-location-instagram svg{width:28px;height:28px}
 .directions-social-actions{display:grid;grid-template-columns:auto 54px;align-items:stretch;gap:.65rem}
 .directions-social-actions .secondary-cta{display:flex;align-items:center;justify-content:center;min-height:54px}
-.directions-social-actions .instagram-link{color:#fff;width:54px;height:54px;padding:0;border:1px solid rgba(255,255,255,.55);border-radius:6px}
+.directions-social-actions .instagram-link{color:#fff;width:54px;height:54px;padding:0;border:0;border-radius:10px}
+.directions-social-actions .instagram-link svg{width:54px;height:54px}
 .location-page .hero-actions>.primary-cta{min-height:54px;display:flex;align-items:center;justify-content:center}
 .instagram-link:hover{border-color:#a9bdff;background:#2356e822}
 .location-actions{flex-wrap:wrap}
