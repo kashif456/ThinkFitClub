@@ -18,6 +18,14 @@ img{max-width:100%;display:block}
 .subhero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,6,10,.96),rgba(4,6,10,.58) 55%,rgba(4,6,10,.15)),linear-gradient(0deg,rgba(4,6,10,.65),transparent)}
 .subhero-content{position:relative;z-index:1;max-width:790px}
 .kicker{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;font-weight:800;color:#c9d5ff}
+/* Keep pale blue on dark sections; use its deeper counterpart on light surfaces. */
+.programs-heading .kicker,
+.contact-copy .kicker,
+.location-membership .membership-intro .kicker,
+.location-page .content.split .kicker,
+.content#clubs>.kicker,
+.content[class="content"]>.kicker,
+.direction-card:not(.upcoming-direction) .kicker{color:#315edc}
 .subhero h1,.content h2{font:700 clamp(3.8rem,8vw,7.5rem)/.92 var(--display);letter-spacing:-.035em;text-transform:uppercase;margin:.7rem 0 1.2rem}
 .subhero p{font-size:1.1rem;max-width:590px;color:#d2d5db}
 .hero-actions{display:flex;gap:1rem;align-items:center;margin-top:2rem}
