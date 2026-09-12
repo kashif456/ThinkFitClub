@@ -27,5 +27,14 @@
   const directContact=document.querySelector('.direct-contact');
   if(directContact)accounts.forEach(account=>{const link=createLink(account);const label=document.createElement('span');label.textContent=account.label;link.appendChild(label);directContact.appendChild(link);});
   const clubAccount=document.body.classList.contains('location-niles')?accounts[0]:window.location.pathname.includes('/elmwood-park/')?accounts[1]:null;
-  if(clubAccount){const hero=document.querySelector('.subhero');if(hero){const link=createLink(clubAccount);link.classList.add('location-instagram');hero.appendChild(link);}}
+  if(clubAccount){
+    const directions=document.querySelector('.subhero .hero-actions .secondary-cta');
+    if(directions){
+      const group=document.createElement('div');
+      group.className='directions-social-actions';
+      directions.replaceWith(group);
+      group.appendChild(directions);
+      group.appendChild(createLink(clubAccount));
+    }
+  }
 })();
