@@ -1,7 +1,12 @@
 .membership-scroll-cue{display:none}
 @media(max-width:760px){
-  .membership-scroll-container{position:relative}
-  .membership-scroll-cue{display:flex;position:absolute;right:5px;top:45%;z-index:2;align-items:center;justify-content:center;width:28px;height:42px;background:#2356e8;color:#fff;border-radius:16px;box-shadow:0 2px 8px #090b0f33;pointer-events:none;font:700 24px/1 sans-serif;animation:membership-arrow-nudge 1.4s ease-in-out 3}
+  .membership-scroll-container{position:relative;border:1px solid #2356e8;border-radius:4px}
+  .join .embed-shell.membership-scroll-container,
+  .location-page .embed.membership-scroll-container{margin-left:calc(24px - 6vw);margin-right:calc(24px - 6vw)}
+  .locations-page .location-membership-embed.membership-scroll-container{margin-left:24px;margin-right:24px}
+  .membership-scroll-container iframe{display:block;width:100%;max-width:100%}
+  /* Cross-origin provider scroll position is unavailable: hide inaccurate cues. */
+  .membership-scroll-cue{display:none}
 }
 @keyframes membership-arrow-nudge{0%,100%{transform:translateY(0)}50%{transform:translateY(4px)}}
 @media(prefers-reduced-motion:reduce){.membership-scroll-cue{animation:none}}
