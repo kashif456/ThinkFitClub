@@ -24,7 +24,7 @@
     link.classList.add('home-location-instagram');
     wrapper.appendChild(link);
   });
-  const directContact=document.querySelector('.direct-contact');
+  const directContact=document.querySelector('.direct-contact:not(.consultation-contact-links)');
   if(directContact)accounts.forEach(account=>{const link=createLink(account);const label=document.createElement('span');label.textContent=account.label;link.appendChild(label);directContact.appendChild(link);});
   const clubAccount=document.body.classList.contains('location-niles')?accounts[0]:window.location.pathname.includes('/elmwood-park/')?accounts[1]:null;
   if(clubAccount){
