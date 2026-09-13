@@ -10,7 +10,7 @@ mobileActions.innerHTML=`
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3zM3 6l9 7 9-7"/></svg>
     <span>Email</span>
   </a>
-  <a class="mobile-action-primary" href="/contact/" aria-label="Request a consultation">
+  <a class="mobile-action-primary" href="/contact/#consultation" aria-label="Request a consultation">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a7 7 0 0 0-7 7c0 4.7 7 11 7 11s7-6.3 7-11a7 7 0 0 0-7-7zm0 4v6m-3-3h6"/></svg>
     <span>Consult</span>
   </a>`;
