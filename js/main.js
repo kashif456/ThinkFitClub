@@ -69,3 +69,17 @@ if(heroImage){
   reduceMotion.addEventListener?.('change',updateHeroParallax);
   updateHeroParallax();
 }
+// Give the home hero a scroll cue only until the visitor starts scrolling.
+(() => {
+  const cue = document.querySelector('.hero-actions .text-link[href="#locations"]');
+  if (!cue) return;
+  const stopAnimation = () => cue.classList.add('is-scrolled');
+  if (window.scrollY > 20 || window.location.hash) stopAnimation();
+  const onScroll = () => {
+    if (window.scrollY <= 20) return;
+    stopAnimation();
+    window.removeEventListener('scroll', onScroll);
+  };
+  cue.addEventListener('click', stopAnimation);
+  window.addEventListener('scroll', onScroll, { passive: true });
+})();

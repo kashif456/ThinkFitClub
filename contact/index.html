@@ -25,7 +25,7 @@
 </nav>
 </header>
 <main>
-<section class="contact-hero"><div><p class="kicker">Let’s talk about your goals</p><h1>YOUR NEXT MOVE<br>STARTS HERE.</h1><p>Tell us what you’re working toward. We’ll help you find the right location, training option, and next step.</p></div></section>
+<section class="contact-hero"><div><p class="kicker">Let’s talk about your goals</p><h1>YOUR NEXT MOVE<br>STARTS HERE.</h1><p>Tell us what you’re working toward. We’ll help you find the right location, training option, and <span class="contact-next-step">next step. <a class="contact-scroll-cue" href="#consultation" aria-label="Scroll down to the consultation form"><span aria-hidden="true">↓</span></a></span></p></div></section>
 <section class="content contact-layout" id="consultation">
 <div class="contact-copy"><p class="kicker">Consultation request</p><h2>LET’S BUILD<br>YOUR PLAN.</h2><p>Complete the form and your request will be sent directly to the ThinkFit team.</p><div class="direct-contact consultation-contact-links"><a href="tel:+17738073505"><span>Call</span>(773) 807-3505</a><a href="mailto:ThinkFitClub@gmail.com"><span>Email</span>ThinkFitClub@gmail.com</a></div></div>
 <div class="consultation-form consultation-embed">
@@ -37,5 +37,18 @@
 </section>
 </main>
 <footer class="page-footer"><a class="footer-logo" href="../" aria-label="ThinkFit Club home"><img src="../assets/logos/thinkfit-logo-reversed-v1.png" alt="ThinkFit Club" width="1752" height="887"></a><p>Think different. Train different.</p><nav class="page-footer-links" aria-label="Footer navigation"><a href="/locations/">Locations</a><a href="/personal-training/">Training &amp; Results</a><a href="/locations/#passes">Membership</a><a href="/store/">Store</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav></footer>
-<script src="../js/page-nav.js"></script></body>
+<script src="../js/page-nav.js"></script>
+<script>
+(() => {
+  const cue = document.querySelector('.contact-scroll-cue');
+  const stopAnimation = () => cue.classList.add('is-scrolled');
+  if (window.scrollY > 20 || window.location.hash === '#consultation') stopAnimation();
+  const onScroll = () => {
+    if (window.scrollY <= 20) return;
+    stopAnimation();
+    window.removeEventListener('scroll', onScroll);
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+})();
+</script></body>
 </html>

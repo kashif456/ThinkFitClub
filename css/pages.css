@@ -60,6 +60,13 @@ img{max-width:100%;display:block}
 .contact-hero>div{max-width:850px}
 .contact-hero h1{font:700 clamp(4rem,8vw,7.5rem)/.9 var(--display);letter-spacing:-.035em;margin:.8rem 0 1.5rem}
 .contact-hero>div>p:last-child{max-width:610px;color:#d2d5db;font-size:1.1rem}
+.contact-next-step{white-space:nowrap}
+.contact-scroll-cue{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;vertical-align:middle;color:#d5ddff;text-decoration:none;font-size:1.75rem;line-height:1}
+.contact-scroll-cue span{display:block;animation:contact-scroll-nudge 2s ease-in-out infinite}
+.contact-scroll-cue{color:var(--blue)}
+.contact-scroll-cue.is-scrolled span{animation:none}
+@keyframes contact-scroll-nudge{0%,100%{transform:translateY(-2px)}50%{transform:translateY(4px)}}
+@media(prefers-reduced-motion:reduce){.contact-scroll-cue span{animation:none}}
 .contact-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:8vw;align-items:start}
 .contact-copy h2{font-size:clamp(2.8rem,5vw,5rem)}
 .direct-contact{display:grid;margin-top:2.5rem;border-top:1px solid #c7cbd0}
