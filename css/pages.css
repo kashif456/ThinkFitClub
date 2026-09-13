@@ -200,6 +200,10 @@ img{max-width:100%;display:block}
 
 @media(max-width:760px){body{padding-bottom:72px}
 #consultation{scroll-margin-top:70px}
+.contact-layout .consultation-form-heading{display:none}
+.contact-layout .consultation-contact-links{display:none}
+.contact-layout .contact-copy>p:last-of-type{margin-bottom:.5rem}
+.contact-layout:has(.consultation-contact-links){gap:1rem}
 .subhero{min-height:570px;padding:6rem 6vw 3.5rem}
 .subhero h1{font-size:16vw}
 .split,.cards,.result-grid{grid-template-columns:1fr}
