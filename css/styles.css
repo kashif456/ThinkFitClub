@@ -38,7 +38,8 @@ em{font-style:normal;color:var(--lime)}
 .text-link,.arrow-link{text-transform:uppercase;font-weight:700;font-size:.72rem;letter-spacing:.1em;border-bottom:1px solid;padding-bottom:.3rem}
 .hero-actions .text-link[href="#locations"]{display:inline-flex;align-items:center;gap:.65rem}
 .hero-actions .text-link[href="#locations"] span{display:inline-block;color:#a9bdff;font-size:1.6rem;font-weight:700;line-height:1;animation:home-club-nudge 2s ease-in-out infinite}
-.hero-actions .text-link[href="#locations"] span{color:var(--blue)}
+.hero-actions .text-link[href="#locations"] span{color:var(--lime)}
+.hero-actions .button[href="#join"] span{color:#fff}
 .hero-actions .text-link.is-scrolled[href="#locations"] span{animation:none}
 @keyframes home-club-nudge{0%,100%{transform:translateY(-2px)}50%{transform:translateY(4px)}}
 @media(prefers-reduced-motion:reduce){.hero-actions .text-link[href="#locations"] span{animation:none}}
