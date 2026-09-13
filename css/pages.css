@@ -233,7 +233,7 @@ img{max-width:100%;display:block}
 }
 
 @media(max-width:760px){
-.location-niles .subhero,.location-elmwood .subhero{min-height:478px;padding-top:2.5rem}
+.location-niles .subhero,.location-elmwood .subhero{min-height:0;align-items:flex-start;padding-top:2rem}
 .location-niles .location-state-full,.location-elmwood .location-state-full{display:none}
 .location-niles .location-state-short,.location-elmwood .location-state-short{display:inline}
 }
