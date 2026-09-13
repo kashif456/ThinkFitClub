@@ -27,6 +27,7 @@ button,input,select{font:inherit}
 .hero-content{position:relative;z-index:2;margin-left:7vw;margin-top:44px;max-width:680px}
 .eyebrow,.section-label{font-size:.68rem;letter-spacing:.17em;font-weight:700;text-transform:uppercase;display:flex;align-items:center;gap:.8rem}
 .eyebrow span{width:25px;height:2px;background:var(--lime)}
+@media(max-width:760px){.hero .eyebrow{font-size:clamp(.65rem,3vw,.8rem);line-height:1.5;letter-spacing:.04em;white-space:nowrap;gap:.55rem}.hero .eyebrow span{width:18px;flex-shrink:0}}
 h1,h2,h3{font-family:var(--display);line-height:.93;margin:0;text-transform:uppercase}
 h1{font-size:clamp(4.6rem,8vw,7.3rem);letter-spacing:-.045em;margin:.9rem 0}
 em{font-style:normal;color:var(--lime)}
