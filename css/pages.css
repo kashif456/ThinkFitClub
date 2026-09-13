@@ -67,6 +67,8 @@ img{max-width:100%;display:block}
 .direct-contact span{display:block;color:#626a73;font-size:.64rem;letter-spacing:.12em;text-transform:uppercase}
 .consultation-form{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;background:#fff;padding:2.25rem;border-top:5px solid var(--blue);box-shadow:0 18px 55px rgba(0,0,0,.08)}
 .consultation-embed{display:block;min-width:0}
+.consultation-form-heading{font-family:var(--body);font-size:1.1rem;line-height:1.4;color:var(--ink);margin:0 0 1rem;font-weight:700}
+@media(max-width:760px){.consultation-embed .consultation-form-heading{padding:0 6vw;font-size:1rem}}
 .consultation-form label{font-size:.68rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
 .consultation-form input,.consultation-form select,.consultation-form textarea{display:block;width:100%;margin-top:.45rem;padding:.85rem;border:1px solid #cbd0d5;background:#fff;font:inherit;text-transform:none;letter-spacing:0}
 .consultation-form textarea{resize:vertical}
