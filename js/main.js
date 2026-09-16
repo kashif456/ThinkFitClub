@@ -107,7 +107,7 @@ if(northwestCard){
   const status=northwestCard.querySelector('p');
   const address=northwestCard.querySelector('h3 + span');
   const link=northwestCard.querySelector('b');
-  if(status)status.textContent='NOW OPEN · OPEN 24/7 · ELK GROVE / SCHAUMBURG';
-  if(address)address.textContent='1102 E Nerge Rd · Elk Grove Village, IL';
+  if(status)status.textContent='NOW OPEN · 24/7';
+  if(address)address.textContent='ELK GROVE / SCHAUMBURG · 1102 E Nerge Rd';
   if(link)link.innerHTML='Explore Northwest <i>↗</i>';
 }
