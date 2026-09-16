@@ -108,6 +108,6 @@ if(northwestCard){
   const address=northwestCard.querySelector('h3 + span');
   const link=northwestCard.querySelector('b');
   if(status)status.textContent='NOW OPEN · 24/7';
-  if(address)address.textContent='ELK GROVE / SCHAUMBURG · 1102 E Nerge Rd';
+  if(address)address.innerHTML='ELK GROVE / SCHAUMBURG<br>1102 E Nerge Rd';
   if(link)link.innerHTML='Explore Northwest <i>↗</i>';
 }
