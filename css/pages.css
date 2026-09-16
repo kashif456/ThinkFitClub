@@ -131,6 +131,8 @@ img{max-width:100%;display:block}
 .location-niles .subhero img{object-position:center 58%}
 .location-elmwood .subhero img{object-position:center 56%}
 .location-northwest .subhero img{object-position:center 52%}
+.location-northwest .subhero-content>.coming{position:absolute;left:0;bottom:calc(100% + .65rem)}
+.location-northwest .subhero-content>.kicker{margin:0}
 .club-switcher{display:grid;grid-template-columns:repeat(3,1fr);background:#10131a;color:#fff;border-top:1px solid #2c323d;border-bottom:1px solid #2c323d;padding:0 6vw}
 .club-switcher a{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.05rem 1.25rem;border-right:1px solid #2c323d}
 .club-switcher a:first-child{border-left:1px solid #2c323d}
@@ -257,3 +259,4 @@ img{max-width:100%;display:block}
 
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}
 }
+@media(max-width:700px){.location-membership-embed iframe,.location-page .embed iframe{height:1600px}}

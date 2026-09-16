@@ -30,6 +30,18 @@ document.querySelector('.review-next')?.addEventListener('click',()=>{reviewInde
 renderReview()});
 if(stage)renderReview();
 
+const northwestMembership=document.querySelector('.home-v2 .club-tab.disabled');
+if(northwestMembership){
+  const northwestButton=document.createElement('button');
+  northwestButton.className='club-tab';
+  northwestButton.type='button';
+  northwestButton.setAttribute('role','tab');
+  northwestButton.setAttribute('aria-selected','false');
+  northwestButton.dataset.club='Northwest';
+  northwestButton.dataset.src='https://go.streamfit.com/embed/memberships/957-thinkfit-club-nw-elk-grove';
+  northwestButton.innerHTML='<span>NW</span><small>Elk Grove · Schaumburg</small>';
+  northwestMembership.replaceWith(northwestButton);
+}
 const membershipFrame=document.querySelector('.membership-frame');
 document.querySelectorAll('.club-tab[data-src]').forEach(tab=>tab.addEventListener('click',()=>{
   document.querySelectorAll('.club-tab[data-src]').forEach(item=>{
@@ -86,7 +98,7 @@ if(heroImage){
 
 // Northwest is open; keep the compact regional label together in tight hero layouts.
 const homeEyebrow=document.querySelector('.home-v2 .hero .eyebrow');
-if(homeEyebrow)homeEyebrow.innerHTML='<span></span> THINKFIT — NILES · ELMWOOD PARK · <span class="nw-label">NW (Elk Grove, Schaumburg)</span>';
+if(homeEyebrow)homeEyebrow.innerHTML='<span class="eyebrow-line"></span><span class="eyebrow-brand">THINKFIT</span><span class="hero-marquee"><span class="hero-marquee-track">— NILES · ELMWOOD PARK · NW (ELK GROVE, SCHAUMBURG) ·&nbsp;&nbsp;— NILES · ELMWOOD PARK · NW (ELK GROVE, SCHAUMBURG) ·&nbsp;&nbsp;</span></span>';
 const locationCount=document.querySelector('.home-v2 .value-points article:nth-child(2) span');
 if(locationCount)locationCount.textContent='Chicagoland locations—all open';
 const northwestCard=document.querySelector('.home-v2 .location-card.northwest');
