@@ -39,7 +39,7 @@ if(northwestMembership){
   northwestButton.setAttribute('aria-selected','false');
   northwestButton.dataset.club='Northwest';
   northwestButton.dataset.src='https://go.streamfit.com/embed/memberships/957-thinkfit-club-nw-elk-grove';
-  northwestButton.innerHTML='<span>NW</span><small>Elk Grove · Schaumburg</small>';
+  northwestButton.innerHTML='<span>Northwest</span><small>Elk Grove · Schaumburg</small>';
   northwestMembership.replaceWith(northwestButton);
 }
 const membershipFrame=document.querySelector('.membership-frame');
@@ -98,7 +98,7 @@ if(heroImage){
 
 // Northwest is open; keep the compact regional label together in tight hero layouts.
 const homeEyebrow=document.querySelector('.home-v2 .hero .eyebrow');
-if(homeEyebrow)homeEyebrow.innerHTML='<span class="eyebrow-line"></span><span class="eyebrow-brand">THINKFIT</span><span class="eyebrow-line"></span><span class="hero-marquee"><span class="hero-marquee-track"><span class="hero-marquee-group"><span>NILES</span><i></i><span>ELMWOOD PARK</span><i></i><span>NW (ELK GROVE, SCHAUMBURG)</span><i></i></span><span class="hero-marquee-group" aria-hidden="true"><span>NILES</span><i></i><span>ELMWOOD PARK</span><i></i><span>NW (ELK GROVE, SCHAUMBURG)</span><i></i></span></span></span>';
+if(homeEyebrow)homeEyebrow.innerHTML='<span class="hero-marquee"><span class="hero-marquee-track"><span class="hero-marquee-group"><span>NILES</span><i></i><span>ELMWOOD PARK</span><i></i><span>NORTHWEST (ELK GROVE, SCHAUMBURG)</span><i></i></span><span class="hero-marquee-group" aria-hidden="true"><span>NILES</span><i></i><span>ELMWOOD PARK</span><i></i><span>NORTHWEST (ELK GROVE, SCHAUMBURG)</span><i></i></span></span></span>';
 const locationCount=document.querySelector('.home-v2 .value-points article:nth-child(2) span');
 if(locationCount)locationCount.textContent='Chicagoland locations—all open';
 const northwestCard=document.querySelector('.home-v2 .location-card.northwest');
@@ -107,7 +107,7 @@ if(northwestCard){
   const status=northwestCard.querySelector('p');
   const address=northwestCard.querySelector('h3 + span');
   const link=northwestCard.querySelector('b');
-  if(status)status.textContent='NOW OPEN · ELK GROVE / SCHAUMBURG';
+  if(status)status.textContent='NOW OPEN · OPEN 24/7 · ELK GROVE / SCHAUMBURG';
   if(address)address.textContent='1102 E Nerge Rd · Elk Grove Village, IL';
   if(link)link.innerHTML='Explore Northwest <i>↗</i>';
 }
