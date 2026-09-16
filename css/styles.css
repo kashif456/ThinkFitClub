@@ -176,7 +176,7 @@ footer>p{font-size:.8rem;color:#898b84}
 .video-shell{position:relative;aspect-ratio:16/9;background:#080a0d;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.13)}
 .video-shell iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .nw-label{white-space:nowrap}
-@media(max-width:700px){.join .embed-shell{min-height:1400px}.join .membership-frame{height:1400px}}
+@media(max-width:700px){.join .embed-shell{min-height:1600px}.join .membership-frame{height:1600px}}
 .home-v2 .stories{background:#0c0f14;color:#fff}
 .story-heading{margin-bottom:2rem}
 .story-heading .text-link{flex:0 0 auto}
