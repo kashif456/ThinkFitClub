@@ -65,7 +65,7 @@ img{max-width:100%;display:block}
 .contact-scroll-cue span{display:block;animation:contact-scroll-nudge 2s ease-in-out infinite}
 .contact-scroll-cue{color:var(--blue)}
 .contact-scroll-cue.is-scrolled span{animation:none}
-@keyframes contact-scroll-nudge{0%,100%{transform:translateY(-2px)}50%{transform:translateY(4px)}}
+@keyframes contact-scroll-nudge{0%,12%,42%,52%,62%,100%{transform:translateY(0)}28%{transform:translateY(7px)}47%{transform:translateY(3px)}}
 @media(prefers-reduced-motion:reduce){.contact-scroll-cue span{animation:none}}
 .contact-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:8vw;align-items:start}
 .contact-copy h2{font-size:clamp(2.8rem,5vw,5rem)}

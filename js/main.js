@@ -98,7 +98,7 @@ if(heroImage){
 
 // Northwest is open; keep the compact regional label together in tight hero layouts.
 const homeEyebrow=document.querySelector('.home-v2 .hero .eyebrow');
-if(homeEyebrow)homeEyebrow.innerHTML='<span class="eyebrow-line"></span><span class="eyebrow-brand">THINKFIT</span><span class="hero-marquee"><span class="hero-marquee-track">— NILES · ELMWOOD PARK · NW (ELK GROVE, SCHAUMBURG) ·&nbsp;&nbsp;— NILES · ELMWOOD PARK · NW (ELK GROVE, SCHAUMBURG) ·&nbsp;&nbsp;</span></span>';
+if(homeEyebrow)homeEyebrow.innerHTML='<span class="eyebrow-line"></span><span class="eyebrow-brand">THINKFIT</span><span class="eyebrow-line"></span><span class="hero-marquee"><span class="hero-marquee-track"><span class="hero-marquee-group"><span>NILES</span><i></i><span>ELMWOOD PARK</span><i></i><span>NW (ELK GROVE, SCHAUMBURG)</span><i></i></span><span class="hero-marquee-group" aria-hidden="true"><span>NILES</span><i></i><span>ELMWOOD PARK</span><i></i><span>NW (ELK GROVE, SCHAUMBURG)</span><i></i></span></span></span>';
 const locationCount=document.querySelector('.home-v2 .value-points article:nth-child(2) span');
 if(locationCount)locationCount.textContent='Chicagoland locations—all open';
 const northwestCard=document.querySelector('.home-v2 .location-card.northwest');
