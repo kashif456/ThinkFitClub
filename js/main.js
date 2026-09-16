@@ -83,3 +83,19 @@ if(heroImage){
   cue.addEventListener('click', stopAnimation);
   window.addEventListener('scroll', onScroll, { passive: true });
 })();
+
+// Northwest is open; keep the compact regional label together in tight hero layouts.
+const homeEyebrow=document.querySelector('.home-v2 .hero .eyebrow');
+if(homeEyebrow)homeEyebrow.innerHTML='<span></span> THINKFIT — NILES · ELMWOOD PARK · <span class="nw-label">NW (Elk Grove, Schaumburg)</span>';
+const locationCount=document.querySelector('.home-v2 .value-points article:nth-child(2) span');
+if(locationCount)locationCount.textContent='Chicagoland locations—all open';
+const northwestCard=document.querySelector('.home-v2 .location-card.northwest');
+if(northwestCard){
+  northwestCard.classList.remove('upcoming');
+  const status=northwestCard.querySelector('p');
+  const address=northwestCard.querySelector('h3 + span');
+  const link=northwestCard.querySelector('b');
+  if(status)status.textContent='NOW OPEN · ELK GROVE / SCHAUMBURG';
+  if(address)address.textContent='1102 E Nerge Rd · Elk Grove Village, IL';
+  if(link)link.innerHTML='Explore Northwest <i>↗</i>';
+}
