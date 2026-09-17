@@ -135,10 +135,11 @@ footer>p{font-size:.8rem;color:#898b84}
 .home-v2 .site-header{position:fixed;top:0;height:76px;padding:0 5vw;background:rgba(9,11,15,.8);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);transition:background .2s,box-shadow .2s}
 .home-v2 .site-header.is-scrolled{background:rgba(9,11,15,.97);box-shadow:0 8px 28px rgba(0,0,0,.22)}
 .home-v2 .brand-logo img{height:62px}
-.home-v2 .desktop-nav{gap:1.7rem;font-size:.76rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase}
-.header-actions{display:flex;align-items:center;gap:.75rem}
+.home-v2 .desktop-nav{gap:1.7rem;font-size:.76rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;white-space:nowrap}
+.header-actions{display:flex;align-items:center;gap:.75rem;white-space:nowrap}
 .header-consult{padding:.72rem 1rem;border:1px solid rgba(255,255,255,.55);font-size:.7rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;transition:.2s}
 .header-consult:hover{background:#fff;color:var(--ink)}
+@media(min-width:901px) and (max-width:1200px){.home-v2 .site-header{padding:0 3vw}.home-v2 .desktop-nav{gap:1rem;font-size:.68rem;letter-spacing:.04em}.home-v2 .header-actions{gap:.4rem}.home-v2 .header-consult{padding:.65rem .7rem;font-size:.62rem;letter-spacing:.04em}.home-v2 .header-cta{padding:.65rem .7rem;gap:.45rem;font-size:.64rem;letter-spacing:.04em}}
 .home-v2 .hero{height:610px;min-height:610px;max-height:610px}
 .home-v2 .hero-image{height:112%;top:-6%;will-change:transform}
 .home-v2 .hero-content{margin-top:50px;width:min(760px,88vw);max-width:760px;min-width:0}
