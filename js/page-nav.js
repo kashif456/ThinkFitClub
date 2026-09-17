@@ -2,6 +2,14 @@ const pageHeader = document.querySelector('.page-header');
 const pageNav = document.querySelector('.page-nav');
 
 if (pageHeader && pageNav) {
+  const navConsult = pageNav.querySelector('.nav-cta');
+  if (navConsult) {
+    const headerActions = document.createElement('div');
+    headerActions.className = 'page-header-actions';
+    headerActions.innerHTML = `<a class="header-consult" href="${navConsult.getAttribute('href')}">${navConsult.textContent}</a><a class="header-cta" href="/locations/#passes">Buy a pass <span aria-hidden="true">↗</span></a>`;
+    pageHeader.appendChild(headerActions);
+  }
+
   const menuButton = document.createElement('button');
   menuButton.className = 'mobile-menu-toggle';
   menuButton.type = 'button';
